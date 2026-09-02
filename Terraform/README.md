@@ -139,3 +139,39 @@ terraform apply -auto-approve
 
 
 data.tf or main.tf 
+
+# tf3-Sep-2024
+
+- terraform init
+- terraform fmt
+- terraform validate
+- terraform plan
+- terraform apply -auto-approve
+
+*** terraform destroy first and then it will create
+
+
+brew install direnv
+
+direnv allow .
+
+vi ~/.bash_profile
+source ~/.bash_profile
+
+
+cat ~/.bash_profile
+eval "$(direnv hook bash)"
+
+why we should share terraform state?    
+
+- to share state between different team
+- to share state between different developer
+- to share state between different environment
+
+# tfstate
+
+- tfstate is a file that stores the state of your infrastructure.
+
+- run tarraform login <- to create api
+
+store the token in this route /Users/p2k/.terraform.d/credentials.tfrc.json 

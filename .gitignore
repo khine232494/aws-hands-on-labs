@@ -2,5 +2,8 @@
 *.pem
 .aws/
 .terraform/
+*.tfstate
+*.tfvars
+**/.envrc
 *.tfstate*.log
 *.log
