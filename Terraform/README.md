@@ -46,7 +46,7 @@ aws sts get-caller-identity --profile aws-master-admin
 
 
 when run (terraform init) command from cli, what does happen?
--Initializing provider plugins...
+- Initializing provider plugins...
 - Finding hashicorp/aws versions matching "6.60.0"...
 - Installing hashicorp/aws v6.60.0...
 - Installed hashicorp/aws v6.60.0 (signed by HashiCorp)
@@ -89,7 +89,10 @@ What is terraform apply?
 - Terraform apply is used to create or change infrastructure. Terraform will compare the configuration defined in the configuration files with the real world to determine what needs to be changed.
 
 What is terraform destroy?
-- Terraform destroy is used to destroy Terraform-managed infrastructure. This is useful when you want to destroy infrastructure that was created by Terraform.   
+- Terraform destroy is used to destroy Terraform-managed infrastructure. This is useful when you want to destroy infrastructure that was created by Terraform. 
+
+What does terraform import do?
+- Terraform import is used to import existing resources into Terraform. This is useful when you want to import existing resources into Terraform.
 
 
 # Debugging Terraform
@@ -175,3 +178,34 @@ why we should share terraform state?
 - run tarraform login <- to create api
 
 store the token in this route /Users/p2k/.terraform.d/credentials.tfrc.json 
+
+
+# revison for Session 02- Terraform Preparations
+
+- aws --version
+- aws configure --profile hellocloud-aws-master-account
+AWS Access Key ID : [****************]
+AWS Secret Access Key : [***************]
+Default region name : [ap-northeast-1]
+Default output format : json
+
+- cat ~/.aws/credentials
+- cat ~/.aws/config
+
+To verify using awscli
+aws sts get-caller-identity --profile hellocloud-aws-master-account
+{
+    "Account": "xxxx",
+    "UserId": "xxxx",
+    "Arn": "arn:aws:iam::xxxx:user/hellocloud-aws-master-account",
+    "UserName": "hellocloud-aws-master-account"
+}
+
+- when query the resource ,which resource show the output information.
+
+- create provider or versions.tf
+- create data.tf or main.tf
+- create outputs.tf
+- create variables.tf
+
+you should use alias when more than one provider.
