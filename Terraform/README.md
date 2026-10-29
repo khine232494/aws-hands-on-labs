@@ -209,3 +209,8 @@ aws sts get-caller-identity --profile hellocloud-aws-master-account
 - create variables.tf
 
 you should use alias when more than one provider.
+
+# Terraform KeyPair
+
+- public key is required.
+- in aws console, private key is downloaded to your computer and public key downloaded in aws
