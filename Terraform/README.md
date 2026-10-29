@@ -214,3 +214,19 @@ you should use alias when more than one provider.
 
 - public key is required.
 - in aws console, private key is downloaded to your computer and public key downloaded in aws
+
+- if you have private key, you can change to public key using this command.
+
+-> ssh-keygen -y -f keypairname > derived_public_key
+
+- if you want to check between two files or two keypairs, you can check using this command.
+
+-> diff keypairname1 keypairname2
+
+- if didn't show anything, they are same.
+
+-> ssh-keygen -t rsa
+
+In most modern SSH use cases, Ed25519 is the recommended choice over RSA because it provides strong security, small keys, and fast performance.
+
+Both can be secure when configured correctly, though. The best choice depends on compatibility requirements and your environment.
