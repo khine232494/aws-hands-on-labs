@@ -38,7 +38,7 @@
 - aws ec2 describe-vpcs --profile master-programmatic-admin --region ap-southeast-2 --debug 
 (See in debug3.log) => get the error (UnauthorizedOperation) 403 None
 
-
+- IAM is global service and it is not regional.
 
 
 

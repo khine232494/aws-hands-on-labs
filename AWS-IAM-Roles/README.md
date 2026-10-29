@@ -106,7 +106,7 @@ aws iam list-users --profile dev-programmatic-admin-role --debug
         {
             "Path": "/",
             "UserName": "dev-console-admin",
-            "UserId": "AIDAV7P3D73RK62AMIFQH",
+            "UserId": "xxx",
             "Arn": "arn:aws:iam::411232894690:user/dev-console-admin",
             "CreateDate": "2026-08-09T05:09:10+00:00",
             "PasswordLastUsed": "2026-08-09T16:53:27+00:00"
@@ -114,7 +114,7 @@ aws iam list-users --profile dev-programmatic-admin-role --debug
         {
             "Path": "/",
             "UserName": "dev-programmatic-admin",
-            "UserId": "AIDAV7P3D73RK6GBCA5Q7",
+            "UserId": "xxx",
             "Arn": "arn:aws:iam::411232894690:user/dev-programmatic-admin",
             "CreateDate": "2026-08-09T05:17:22+00:00"
         }
